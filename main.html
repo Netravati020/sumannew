@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+  integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+  crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+<script src="{{ url_for('static', path='js/autocomplete.js') }}"></script>
+<link rel="stylesheet" href="./styles.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- fonty family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<script type="text/javascript" src="script.js"></script>
+  <title>Suman</title>
+  <nav class="navbar navbar-expand-lg navbar-light"
+  style="nav-right: auto; background-color: lightseagreen;padding: 10px; ">
+
+  <!-- <img src="./static/images/lo.png" alt="logo" width="70" height="40" > -->
+
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+  <div >
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" style="color:black; padding: 20px;" href="#">Home <span
+            class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="padding:20px;color:black" href="#">About us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-expanded="false" style="padding:20px;color: black">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" style="padding:20px;color: black">Contact us</a>
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" id="autocomplete" name="query" type="search" placeholder="Search"
+        aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+</head>
+
+<body>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./static/images/imgg.jpeg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h4 style="font-size:40px ; color:black;padding-bottom: 45px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;text-align: center;">WITH 150+ STAFF MEMBERS </h4>
+          <!-- <h5 style="color:black"> IN HYDERABAD SCINCE 1980</h5> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./static/images/im2.jpeg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h2>hello</h2> -->
+          <!-- <p>Some representative placeholder content for the second slide.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./static/images/imgg3.jpeg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 style="font-size: 40px; color: black">WE HAVE DISPATCHES</h2>
+          <div>
+            <ul style="font-size: 40px; color: black;padding-right: 40px;">
+              <h3>Uppal</h3>
+              <h3>Indarbhag<h3>
+              <h3>KPHB</h3>
+            </ul>
+          </div>
+
+          <!-- <h5>Third slide label</h5> -->
+          <!-- <p>Some representative placeholder content for the third slide.</p> -->
+        </div>
+      </div>
+
+      <!-- <div class="carousel-item">
+        <img src="./static/images/cold.png" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>COLD STORAGE 200 SQ.FT (BLUESTAR)</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div> -->
+
+      <div class="carousel-item">
+        <img src="./static/images/imgg1.jpeg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-size: 40px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black;padding-right: 30px;">WE HAVE 25000 SQ.FT AREA</h5>
+          <!-- <p>Some representative placeholder content for the third slide.</p> -->
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./static/images/imgg4.jpeg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>Third slide label</h5> -->
+          <!-- <p>Some representative placeholder content for the third slide.</p> -->
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./static/images/imgg5.jpeg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>Third slide label</h5> -->
+          <!-- <p>Some representative placeholder content for the third slide.</p> -->
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./static/images/imgg6.jpeg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-size: 40px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black;padding-right: 30px">OFFICIAL CABINS</h5>
+          <!-- <p>Some representative placeholder content for the third slide.</p> -->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <div class="img" id="Home">
+    <section id="hero" class="d-flex align-item-center">
+      
+        <div class="container" style="font-size:50px ; color:black;padding:100px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;text-align: center;">
+            <h3>WE ARE LEADING DISTRIBUTORS</h3>
+            <h4>IN HYDERABAD SINCE 1980 </h4>
+            
+        </div>
+      </div>
+    
+    </section>
+  
+    <section class="flexBox">
+      <div class="homeText" style="font-size: 20px;"> 
+        <h2>About us</h2>
+      
+<div>
+  <ul>
+    <li>Suman Agencies straddles accros key therapy areas and markets its pharm products in all pharma industry</li>
+    <li>We are in this industry from 1980. We have 25000 Sq.ft areal, cold storage 200 sq. ft, 2 official cabins and dispaching locations at uppal, indarbagh and KPHB</li>
+    <li> We have dedicated sections for each and every operation namely, accounts unit, dispaching unit, transport unit, quality check unit, and expiry breackage</li>
+  
+
+       
+    <li> expiry beackage: The expired tablets will be returned to us at our location so, after verifying the returned items, we will credit the amount as coupon for next ourchase in 2 months.</li>
+          </ul>
+      </div>
+      </div>
+      <div class="image" style="border-radius: 50px;">
+        <img src="./static/images/imgg5.jpeg" alt="image1" width="500" height="300"/>
+      </div>
+      
+
+    </section>
+    
+    
+<div class="con" style="padding-left: 50px;">
+    <h2>Contact us</h2>
+    </div>
+    <div class="container" id="Contact Us">
+        
+      <div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8">
+  
+  <!-- <div style="";> -->
+      <h4 class="text-center">If You Have Any Query, Please Contact us</h4>
+  <!-- </div> -->
+  <form action="" style= "padding: 25px;">
+      
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Your Mobile">
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+              
+              <input type="text" class="form-control" id="exampleInputEmail1"  placeholder="Message">
+            </div>
+            <div class="form-group">
+              
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e-mail">
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+<div class="products">
+      <h2> Our partners</h2> 
+       
+            <style>
+              div.gallery {
+                margin: 5px;
+                border: 1px solid #ccc;
+                float: left;
+                width: 180px;
+              }
+              
+              div.gallery:hover {
+                border: 1px solid #777;
+              }
+              
+              div.gallery img {
+                width: 100%;
+                height: auto;
+              }
+              
+              div.desc {
+                padding: 15px;
+                text-align: center;
+              }
+              </style>
+              </head>
+              <body>
+              
+              <div class="gallery">
+                <a target="_blank" href="">
+                  <img src="./static/images/abbott.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">ABBOTT INDIA LTD</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="">
+                  <img src="./static/images/francinoind.png" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">FRANCINI INDIA</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="img_forest.jpg">
+                  <img src="./static/images/alchemlog.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">ALKEM</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                  <img src="./static/images/intaspharm.jpeg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">PHARMACEUTICALS</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                  <img src="./static/images/british.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">BRITISH BIOLOGICALS</div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="img_lights.jpg">
+                  <img src="./static/images/cachet.png" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">CATCHET</div>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                  <img src="./static/images/lupinN.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">LUPIN </div>
+              </div>
+
+              <div class="gallery">
+                <a target="_blank" href="img_mountains.jpg">
+                  <img src="./static/images/Drreddys.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">DR.REDDY'S</div>
+              </div>
+
+              
+
+                
+                </div>
+              </div>
+
+</div>            
+
+</body>
+</html>

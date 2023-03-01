@@ -1,0 +1,41 @@
+.flexBox {
+    display: flex;
+    flex-direction: row;
+ 
+ }
+ .navbar{
+     justify-content: space-around;
+     
+ }
+ .navbar-nav .nav-item{
+     margin: 100;
+ }
+ .homeText{
+     margin: auto;
+     font-family:sans-serif;
+     text-align:left;
+     padding-left:60px;
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+/* #hero{ */
+    /* background-image: url(static/images/img6.jpeg) */
+    /* background-color:#6f42c1; */
+ /* } */
+.image{
+    padding-right: 60px;
+    border-radius: 80px;
+}
+
+.carousel-control-prev-icon{
+    color: black;
+}
+.carousel-control-next-icon{
+    color: black;
+}
+.products{
+    padding-top: 40px;
+    
+}
+ 
